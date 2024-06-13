@@ -41,9 +41,7 @@ const AddressPage: React.FC = () => {
         </div>
         {error && (
           <p className="text-center text-red-500">
-            {error === "No records found"
-              ? "please enter a valid pincode"
-              : "Error fetching data"}
+            {error && "No records found!"}
           </p>
         )}
       </div>
