@@ -41,7 +41,7 @@ const useFetch = (pincode: string) => {
         }
         setData(result);
       } catch (error) {
-        setError(error.message);
+        setError("Error occured!");
         setData(null); // Ensure data is cleared on error
       } finally {
         setLoading(false);
